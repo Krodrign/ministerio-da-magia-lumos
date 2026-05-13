@@ -1,0 +1,178 @@
+/* HEADER */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  z-index: 999;
+
+  backdrop-filter: blur(10px);
+
+  background: rgba(0, 0, 0, 0.35);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* NAVBAR */
+
+.navbar {
+  height: 82px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo img {
+  width: 52px;
+}
+
+.logo-text h1 {
+  font-family: "Cinzel", serif;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  letter-spacing: 1px;
+}
+
+.logo-text span {
+  color: var(--gray);
+
+  font-size: 12px;
+}
+
+/* MENU */
+
+.menu {
+  display: none;
+  align-items: center;
+  gap: 28px;
+}
+
+.menu a {
+  position: relative;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  letter-spacing: 1px;
+
+  transition: 0.25s ease;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: var(--gold);
+}
+
+.menu .nav-cta {
+  margin-left: 18px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(214, 179, 106, 0.52);
+  background: linear-gradient(
+    135deg,
+    rgba(214, 179, 106, 0.95),
+    rgba(184, 146, 79, 0.95)
+  );
+  color: #050505;
+  font-weight: 800;
+  box-shadow: 0 10px 28px rgba(214, 179, 106, 0.18);
+}
+
+.menu .nav-cta:hover {
+  color: #050505;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(214, 179, 106, 0.28);
+}
+
+/* BOTÃO */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 170px;
+
+  height: 52px;
+
+  padding: 0 28px;
+
+  border-radius: 14px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: black;
+}
+
+.btn-gold:hover {
+  transform: translateY(-3px);
+
+  background: #e2c07b;
+}
+
+.btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.btn-outline:hover {
+  border-color: rgba(214, 179, 106, 0.35);
+
+  background: rgba(214, 179, 106, 0.05);
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 42px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+
+  text-align: center;
+}
+
+.footer-content img {
+  width: 64px;
+}
+
+.footer-content p {
+  color: var(--gray);
+
+  font-size: 14px;
+}
+
+/* DESKTOP */
+
+@media (min-width: 900px) {
+  .menu {
+    display: flex;
+  }
+}

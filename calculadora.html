@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Calculadora Penal • Ministério da Magia</title>
+
+    <link rel="icon" sizes="32x32" href="./assets/logo/logo.png" />
+    <link rel="apple-touch-icon" href="./assets/logo/logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="stylesheet" href="./css/pages/penal.css" />
+    <link rel="stylesheet" href="./css/pages/calculadora.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container navbar">
+        <a href="./index.html" class="logo">
+          <img src="./assets/logo/logo.png" alt="Logo Ministério da Magia" />
+
+          <div class="logo-text">
+            <h1>MINISTÉRIO DA MAGIA</h1>
+            <span>Cidade de Lumos</span>
+          </div>
+        </a>
+
+        <nav class="menu">
+          <a href="./index.html">INÍCIO</a>
+          <a href="./constituicao.html">CONSTITUIÇÃO</a>
+          <a href="./codigo-penal.html">CÓDIGO PENAL</a>
+          <a href="./calculadora.html" class="active">CALCULADORA</a>
+          <a href="./o-ministerio.html">O MINISTÉRIO</a>
+          <a
+            href="https://discord.gg/lumosrpgg"
+            class="nav-cta"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            DISCORD DA CIDADE
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="calculator-page">
+      <section class="cp-hero">
+        <div class="cp-overlay"></div>
+
+        <div class="container">
+          <div class="cp-hero-content fade-up">
+            <span>FERRAMENTA OFICIAL</span>
+            <h2>Calculadora Penal</h2>
+            <p>
+              Selecione infrações para compor um resumo de pena, multa e
+              conversão conforme o Código Penal da Cidade de Lumos.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="calculator-section">
+        <div class="container">
+          <div class="report-fields">
+            <div class="form-group">
+              <label for="criminalName"
+                >Nome do infrator <span>Obrigatório</span></label
+              >
+              <input
+                id="criminalName"
+                type="text"
+                placeholder="Informe o nome do infrator"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="aurorReporter">Auror relator</label>
+              <input
+                id="aurorReporter"
+                type="text"
+                placeholder="Informe o auror responsável"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="reportDate">Data <span>Obrigatório</span></label>
+              <input id="reportDate" type="date" />
+              <div class="custom-calendar" id="customCalendar"></div>
+            </div>
+          </div>
+
+          <p class="report-required-info" id="reportRequiredInfo">
+            Preencha nome do infrator, data e ao menos uma infração para copiar
+            o relatório.
+          </p>
+
+          <div class="crime-picker">
+            <div class="form-group level-field">
+              <label for="crimeLevel">Nível</label>
+              <select id="crimeLevel">
+                <option value="" disabled selected>Selecione</option>
+                <option value="leve">Leves</option>
+                <option value="moderada">Moderadas</option>
+                <option value="grave">Graves</option>
+                <option value="imperdoavel">Imperdoáveis</option>
+              </select>
+            </div>
+
+            <div class="form-group crime-field">
+              <label for="crimeSelect">Infração</label>
+              <select id="crimeSelect">
+                <option value="" disabled selected>
+                  Selecione uma infração
+                </option>
+              </select>
+            </div>
+
+            <button id="addCrimeButton" class="btn btn-gold" type="button">
+              Adicionar
+            </button>
+          </div>
+
+          <p class="calculator-feedback" id="calculatorFeedback"></p>
+
+          <div class="crime-summary" id="crimeSummary">
+            <div class="summary-header">
+              <div>
+                <h3>Infrações adicionadas</h3>
+                <p id="crimeSummaryInfo">Nenhuma infração selecionada.</p>
+              </div>
+              <button
+                id="clearCalculationButton"
+                class="summary-copy-button summary-clear-button"
+                type="button"
+              >
+                Limpar Cálculo
+              </button>
+            </div>
+
+            <div class="summary-list" id="crimeSummaryList"></div>
+            <div
+              class="summary-list mitigating-list"
+              id="mitigatingSummaryList"
+            ></div>
+
+            <p class="extraordinary-warning" id="extraordinaryWarning">
+              Atenuantes e conversão em serviço comunitário não se aplicam a
+              medidas extraordinárias.
+            </p>
+
+            <div class="summary-result" id="crimeResult">
+              <div>
+                <span>Pena Final</span>
+                <strong id="totalPenalty">0 meses</strong>
+              </div>
+
+              <div>
+                <span>Multa Final</span>
+                <strong id="totalFine">0 sicles</strong>
+              </div>
+
+              <div>
+                <span>Fiança</span>
+                <strong id="totalBail">0 sicles</strong>
+              </div>
+
+              <div>
+                <span>Serviço Comunitário</span>
+                <strong id="totalService">Sem conversão</strong>
+              </div>
+
+              <div>
+                <span>Dictamos</span>
+                <strong id="totalDictamos">0 dictamos</strong>
+              </div>
+            </div>
+
+            <p class="calculator-alerts" id="calculationWarnings"></p>
+
+            <div class="reduction-details" id="reductionDetails">
+              <div>
+                <span>Pena Base</span>
+                <strong id="basePenalty">0 meses</strong>
+              </div>
+
+              <div>
+                <span>Multa Base</span>
+                <strong id="baseFine">0 sicles</strong>
+              </div>
+
+              <div>
+                <span>Redução aplicada</span>
+                <strong id="reductionApplied">0%</strong>
+              </div>
+
+              <div>
+                <span>Limite de redução</span>
+                <strong id="reductionLimit">Até 50%</strong>
+              </div>
+            </div>
+
+            <div class="mitigating-options">
+              <div class="mitigating-options-header">
+                <span>Atenuantes</span>
+                <p>Selecione uma ou mais condições aplicáveis ao caso.</p>
+              </div>
+
+              <div
+                class="mitigating-options-list"
+                id="mitigatingOptionsList"
+              ></div>
+            </div>
+            <button
+              id="copyReportButton"
+              class="summary-copy-button"
+              type="button"
+            >
+              Copiar Relatório
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <img src="./assets/logo/logo.png" alt="Logo Ministério da Magia" />
+        <p>Ministério da Magia • Calculadora Penal</p>
+      </div>
+
+      <div class="brand-sign">KRODRIGN © 2026</div>
+    </footer>
+
+    <script src="./js/animations.js"></script>
+    <script src="./js/accordion.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/data/penal-crimes.js"></script>
+    <script src="./js/pages/calculadora.js"></script>
+  </body>
+</html>

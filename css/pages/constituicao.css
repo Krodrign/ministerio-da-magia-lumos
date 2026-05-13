@@ -1,0 +1,118 @@
+/* HERO */
+
+.const-hero {
+  position: relative;
+  min-height: 58vh;
+  display: flex;
+  align-items: center;
+  background: url("../../assets/bg/constitution-banner.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.const-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+}
+
+.const-hero-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 80px;
+}
+
+
+/* TÍTULOS */
+
+.const-hero-content h2 {
+  font-family: "Cinzel", serif;
+  font-size: clamp(56px, 9vw, 90px);
+  line-height: 0.95;
+  margin-bottom: 22px;
+}
+
+.const-heading h2,
+.legal-search-box h2,
+.promulgation-box h2 {
+  font-family: "Cinzel", serif;
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.1;
+  margin-bottom: 18px;
+}
+
+/* TEXTOS */
+
+.const-hero-content p,
+.const-heading p,
+.preamble-box p,
+.legal-search-box p,
+.promulgation-box p {
+  color: var(--gray);
+  line-height: 1.8;
+}
+
+/* SEÇÕES */
+
+.const-intro,
+.const-search-section,
+.const-content-section,
+.const-promulgation {
+  padding: 30px 0;
+}
+
+/* CAIXAS DA PÁGINA */
+
+.preamble-box,
+.legal-search-box,
+.promulgation-box {
+  margin-top: 28px;
+  padding: 30px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+/* LISTA DE TÍTULOS */
+
+.const-list {
+  display: grid;
+  gap: 18px;
+}
+
+.article-highlight {
+  border-color: rgba(214, 179, 106, 0.75);
+  box-shadow: 0 0 28px rgba(214, 179, 106, 0.16);
+}
+
+/* PROMULGAÇÃO */
+
+.promulgation-date {
+  margin-top: 24px;
+  color: var(--gray);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .const-hero {
+    min-height: 50vh;
+  }
+
+  .const-hero-content {
+    padding-top: 90px;
+  }
+
+  .const-intro,
+  .const-search-section,
+  .const-content-section,
+  .const-promulgation {
+    padding: 42px 0;
+  }
+
+  .preamble-box,
+  .legal-search-box,
+  .promulgation-box {
+    padding: 22px;
+  }
+}
