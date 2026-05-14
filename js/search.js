@@ -31,7 +31,7 @@
     }
 
     clearResults() {
-      this.results.innerHTML = "";
+      this.results.replaceChildren();
     }
 
     handleInput() {
@@ -46,7 +46,10 @@
       const found = items.filter((item) => this.matchItem(item, value));
 
       if (found.length === 0) {
-        this.results.innerHTML = `<div class="search-empty">${this.noResultsMessage}</div>`;
+        const emptyMessage = document.createElement("div");
+        emptyMessage.className = "search-empty";
+        emptyMessage.textContent = this.noResultsMessage;
+        this.results.appendChild(emptyMessage);
         return;
       }
 
@@ -70,17 +73,20 @@
 
   function renderSearchResult(title, text) {
     const item = document.createElement("div");
+    const resultTitle = document.createElement("strong");
+    const resultText = document.createElement("span");
+
     item.className = "search-result-item";
-    item.innerHTML = `
-      <strong>${title}</strong>
-      <span>${text}</span>
-    `;
+    resultTitle.textContent = title;
+    resultText.textContent = text;
+    item.append(resultTitle, resultText);
+
     return item;
   }
 
   function clearSearch(input, results) {
     input.value = "";
-    results.innerHTML = "";
+    results.replaceChildren();
   }
 
   function openParentAccordion(target, selector) {

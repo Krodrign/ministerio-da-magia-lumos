@@ -1,4 +1,4 @@
-/* CARDS */
+
 
 .card {
   border-radius: 24px;
@@ -6,7 +6,7 @@
   background: rgba(255, 255, 255, 0.025);
 }
 
-/* TÍTULOS DE SEÇÃO */
+
 
 .section-title {
   margin-bottom: 42px;
@@ -94,7 +94,7 @@
   line-height: 1.9;
 }
 
-/* CAIXAS */
+
 
 .info-box {
   padding: 34px;
@@ -121,7 +121,7 @@
   margin-top: 0;
 }
 
-/* CAMPOS */
+
 
 .input {
   width: 100%;
@@ -138,7 +138,7 @@
   border-color: rgba(214, 179, 106, 0.35);
 }
 
-/* ACCORDION */
+
 
 .accordion {
   border-radius: 22px;
@@ -168,7 +168,7 @@
 .accordion-content {
   max-height: 0;
   overflow: hidden;
-  padding: 0 22px;
+  padding: 0 16px;
   opacity: 0;
   transform: translateY(-8px);
   transition:
@@ -179,15 +179,15 @@
 }
 
 .accordion-content.open {
-  padding: 22px;
+  padding: 16px;
   opacity: 1;
   transform: translateY(0);
 }
 
 .article-card,
 .penal-article {
-  padding: 22px;
-  margin-bottom: 16px;
+  padding: 20px;
+  margin-bottom: 12px;
   border-radius: 18px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(0, 0, 0, 0.28);
@@ -212,7 +212,7 @@
   line-height: 1.8;
 }
 
-/* BUSCA */
+
 
 .search-results {
   display: grid;

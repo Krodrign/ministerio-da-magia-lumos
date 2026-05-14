@@ -934,7 +934,7 @@ ${totals.penaltyWarning || totals.fineWarning ? `Avisos: ${[totals.penaltyWarnin
     }
   });
 
-  reportDateInput.value = new Date().toISOString().slice(0, 10);
+  reportDateInput.value = toInputDate(new Date());
   loadCrimesByLevel();
   enhanceSelect(levelSelect);
   enhanceSelect(crimeSelect);

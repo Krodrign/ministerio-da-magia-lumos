@@ -1,4 +1,4 @@
-/* HEADER */
+
 
 .header {
   position: fixed;
@@ -16,7 +16,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* NAVBAR */
+
 
 .navbar {
   height: 82px;
@@ -26,7 +26,7 @@
   justify-content: space-between;
 }
 
-/* LOGO */
+
 
 .logo {
   display: flex;
@@ -53,7 +53,7 @@
   font-size: 12px;
 }
 
-/* MENU */
+
 
 .menu {
   display: flex;
@@ -98,12 +98,13 @@
   box-shadow: 0 14px 34px rgba(214, 179, 106, 0.28);
 }
 
-/* BOTÃO */
+
 
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 
   min-width: 170px;
 
@@ -142,7 +143,7 @@
   background: rgba(214, 179, 106, 0.05);
 }
 
-/* FOOTER */
+
 
 .footer {
   padding: 42px 0;
@@ -169,10 +170,37 @@
   font-size: 14px;
 }
 
-/* DESKTOP */
 
-@media (min-width: 900px) {
+
+@media (min-width: 1081px) {
   .menu {
     display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    height: 76px;
+  }
+
+  .logo {
+    gap: 10px;
+  }
+
+  .logo img {
+    width: 44px;
+  }
+
+  .logo-text h1 {
+    font-size: 12px;
+  }
+
+  .logo-text span {
+    font-size: 11px;
+  }
+
+  .btn {
+    width: 100%;
+    min-width: 0;
   }
 }

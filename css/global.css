@@ -1,4 +1,4 @@
-/* RESET */
+
 
 * {
   margin: 0;
@@ -19,7 +19,7 @@ body {
   overflow-x: hidden;
 }
 
-/* VARIÁVEIS */
+
 
 :root {
   --gold: #d6b36a;
@@ -31,21 +31,21 @@ body {
   --line: rgba(255, 255, 255, 0.08);
 }
 
-/* CONTAINER */
+
 
 .container {
   width: min(1180px, 92%);
   margin: 0 auto;
 }
 
-/* LINKS */
+
 
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* IMAGENS */
+
 
 img {
   display: block;

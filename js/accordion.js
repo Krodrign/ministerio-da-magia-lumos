@@ -1,4 +1,3 @@
-// Accordion functionality
 class AccordionManager {
   static instances = new Map();
 
@@ -16,6 +15,9 @@ class AccordionManager {
   init() {
     const buttons = document.querySelectorAll(`${this.selector}-header`);
     buttons.forEach(button => {
+      button.type = 'button';
+      button.setAttribute('aria-expanded', 'false');
+
       button.addEventListener('click', () => {
         this.toggleAccordion(button);
       });
@@ -26,13 +28,18 @@ class AccordionManager {
     document.querySelectorAll(`${this.selector}-content`).forEach(content => {
       content.classList.remove('open');
       content.style.maxHeight = null;
-      content.style.padding = '0 22px';
-      content.style.opacity = '0';
-      content.style.transform = 'translateY(-8px)';
+      content.style.padding = '';
+      content.style.opacity = '';
+      content.style.transform = '';
     });
 
     document.querySelectorAll(`${this.selector}-header`).forEach(button => {
       button.classList.remove('active');
+      button.setAttribute('aria-expanded', 'false');
+    });
+
+    document.querySelectorAll(this.selector).forEach(accordion => {
+      accordion.classList.remove('active');
     });
 
     document.querySelectorAll(`${this.selector}.highlighted, ${this.selector} .highlighted, ${this.selector} .article-highlight`).forEach(el => {
@@ -42,11 +49,15 @@ class AccordionManager {
   }
 
   openAccordion(header, content) {
+    const accordion = header.closest(this.selector);
+
+    if (accordion) {
+      accordion.classList.add('active');
+    }
+
     header.classList.add('active');
+    header.setAttribute('aria-expanded', 'true');
     content.classList.add('open');
-    content.style.padding = '22px';
-    content.style.opacity = '1';
-    content.style.transform = 'translateY(0)';
     content.style.maxHeight = content.scrollHeight + 40 + 'px';
   }
 
@@ -64,11 +75,7 @@ class AccordionManager {
   }
 }
 
-// Initialize accordions
+window.AccordionManager = AccordionManager;
 document.addEventListener('DOMContentLoaded', () => {
-  // General accordions
-  new AccordionManager('.accordion');
-
-  // Crime accordions (specific for penal page)
-  new AccordionManager('.crime-accordion');
+  new AccordionManager('.accordion');  new AccordionManager('.crime-accordion');
 });

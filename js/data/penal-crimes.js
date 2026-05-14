@@ -7,436 +7,1087 @@ window.PENAL_CRIMES = [
     multa: 1000,
     conversao: "Conversível",
     descricao:
-      "Entrar, circular ou permanecer em área classificada como restrita sem autorização ministerial ou justificativa legítima.",
+      "Entrar, circular ou permanecer em área restrita sem autorização ministerial.",
   },
+
   {
     artigo: "Art. 102",
-    nome: "Entrada Irregular em Área Perigosa",
+    nome: "Desobediência Ministerial",
+    nivel: "leve",
+    pena: 5,
+    multa: 2000,
+    conversao: "Conversível",
+    descricao:
+      "Descumprir ordem legítima emitida por autoridade ministerial.",
+  },
+
+  {
+    artigo: "Art. 107",
+    nome: "Desacato Ministerial",
+    nivel: "leve",
+    pena: 5,
+    multa: 2000,
+    conversao: "Conversível",
+    descricao:
+      "Desrespeitar ou provocar autoridade ministerial durante atuação oficial.",
+  },
+
+  {
+    artigo: "Art. 108",
+    nome: "Falsa Comunicação",
+    nivel: "leve",
+    pena: 5,
+    multa: 2000,
+    conversao: "Conversível",
+    descricao:
+      "Acionar autoridades mediante denúncia falsa ou ocorrência inexistente.",
+  },
+
+  {
+    artigo: "Art. 112",
+    nome: "Uso Indevido de Uniforme Ministerial",
+    nivel: "leve",
+    pena: 5,
+    multa: 2000,
+    conversao: "Conversível",
+    descricao:
+      "Utilizar uniforme, identificação ou vestimenta institucional sem autorização.",
+  },
+
+  {
+    artigo: "Art. 113",
+    nome: "Perturbação Acadêmica",
+    nivel: "leve",
+    pena: 5,
+    multa: 2000,
+    conversao: "Conversível",
+    descricao:
+      "Interferir deliberadamente no funcionamento regular de atividades escolares.",
+  },
+
+  {
+    artigo: "Art. 114",
+    nome: "Entrada Não Autorizada em Área Escolar",
     nivel: "leve",
     pena: 5,
     multa: 1000,
     conversao: "Conversível",
     descricao:
-      "Entrar voluntariamente em áreas classificadas como perigosas, proibidas ou sob restrição ministerial sem autorização.",
+      "Acessar dependências escolares restritas sem autorização institucional.",
   },
+
+  {
+    artigo: "Art. 115",
+    nome: "Omissão de Identificação",
+    nivel: "leve",
+    pena: 5,
+    multa: 2000,
+    conversao: "Conversível",
+    descricao:
+      "Recusar-se injustificadamente a fornecer identificação durante abordagem oficial.",
+  },
+
   {
     artigo: "Art. 103",
     nome: "Perturbação da Ordem Pública",
     nivel: "leve",
-    pena: 5,
-    multa: 1000,
+    pena: 10,
+    multa: 3000,
     conversao: "Conversível",
     descricao:
-      "Provocar tumulto, desordem coletiva ou interferência no funcionamento regular de ambientes públicos.",
+      "Provocar tumulto, desordem ou interrupção do funcionamento regular de espaços públicos.",
   },
+
   {
     artigo: "Art. 104",
-    nome: "Obstrução de Via Pública",
-    nivel: "leve",
-    pena: 5,
-    multa: 1000,
-    conversao: "Conversível",
-    descricao:
-      "Bloquear, dificultar ou comprometer circulação em vias públicas, acessos institucionais ou áreas comuns.",
-  },
-  {
-    artigo: "Art. 105",
-    nome: "Descumprimento Administrativo",
-    nivel: "leve",
-    pena: 5,
-    multa: 1000,
-    conversao: "Conversível",
-    descricao:
-      "Descumprir determinação administrativa, orientação institucional ou procedimento obrigatório.",
-  },
-  {
-    artigo: "Art. 106",
-    nome: "Desobediência Ministerial",
-    nivel: "leve",
-    pena: 10,
-    multa: 2000,
-    conversao: "Conversível",
-    descricao:
-      "Descumprir ordem legítima emitida por autoridade ministerial durante atuação oficial.",
-  },
-  {
-    artigo: "Art. 107",
-    nome: "Direção Imprudente de Veículo Mágico",
-    nivel: "leve",
-    pena: 10,
-    multa: 2000,
-    conversao: "Conversível",
-    descricao:
-      "Operar vassoura, veículo mágico ou meio de transporte de maneira imprudente, perigosa ou irresponsável.",
-  },
-  {
-    artigo: "Art. 108",
-    nome: "Uso Indevido de Artefato Comum",
-    nivel: "leve",
-    pena: 10,
-    multa: 2000,
-    conversao: "Conversível",
-    descricao:
-      "Utilizar artefato mágico comum de maneira inadequada, causando perturbação ou risco leve à coletividade.",
-  },
-  {
-    artigo: "Art. 109",
-    nome: "Falsa Comunicação de Emergência",
-    nivel: "leve",
-    pena: 10,
-    multa: 2000,
-    conversao: "Conversível",
-    descricao:
-      "Acionar falsamente autoridades, equipes ministeriais ou alertas emergenciais sem motivo legítimo.",
-  },
-  {
-    artigo: "Art. 110",
-    nome: "Desacato",
-    nivel: "leve",
-    pena: 10,
-    multa: 2000,
-    conversao: "Conversível",
-    descricao:
-      "Desrespeitar autoridade ministerial durante exercício regular de função.",
-  },
-  {
-    artigo: "Art. 111",
-    nome: "Duelo Irregular",
-    nivel: "leve",
-    pena: 10,
-    multa: 3000,
-    conversao: "Conversível",
-    descricao:
-      "Participar de combate mágico fora de local autorizado ou sem condições adequadas.",
-  },
-  {
-    artigo: "Art. 112",
-    nome: "Ocultação Facial",
-    nivel: "leve",
-    pena: 10,
-    multa: 3000,
-    conversao: "Conversível",
-    descricao:
-      "Ocultar deliberadamente aparência ou identidade visual com objetivo de dificultar reconhecimento.",
-  },
-  {
-    artigo: "Art. 113",
     nome: "Uso Indevido de Magia",
     nivel: "leve",
     pena: 10,
     multa: 3000,
     conversao: "Conversível",
     descricao:
-      "Utilizar magia de forma irresponsável, imprudente ou desnecessária causando risco leve.",
+      "Utilizar magia de forma imprudente, irresponsável ou desnecessária sem dano grave.",
   },
+
+  {
+    artigo: "Art. 105",
+    nome: "Duelo Irregular",
+    nivel: "leve",
+    pena: 10,
+    multa: 4000,
+    conversao: "Conversível",
+    descricao:
+      "Participar de combate mágico fora de área autorizada ou sem supervisão adequada.",
+  },
+
+  {
+    artigo: "Art. 106",
+    nome: "Ocultação Facial",
+    nivel: "leve",
+    pena: 10,
+    multa: 4000,
+    conversao: "Conversível",
+    descricao:
+      "Ocultar deliberadamente a identidade visual para dificultar reconhecimento ministerial.",
+  },
+
+  {
+    artigo: "Art. 109",
+    nome: "Uso Indevido de Artefato",
+    nivel: "leve",
+    pena: 10,
+    multa: 3000,
+    conversao: "Conversível",
+    descricao:
+      "Utilizar artefato mágico de forma imprópria, insegura ou sem autorização.",
+  },
+
+  {
+    artigo: "Art. 110",
+    nome: "Fraude Simples",
+    nivel: "leve",
+    pena: 10,
+    multa: 4000,
+    conversao: "Conversível",
+    descricao:
+      "Obter vantagem indevida mediante mentira ou falsa representação sem grave prejuízo coletivo.",
+  },
+
+  {
+    artigo: "Art. 111",
+    nome: "Descumprimento de Ordem Judicial",
+    nivel: "leve",
+    pena: 10,
+    multa: 4000,
+    conversao: "Conversível",
+    descricao:
+      "Descumprir determinação oficialmente emitida pelo Tribunal Arcano.",
+  },
+
+  {
+    artigo: "Art. 116",
+    nome: "Atrapalhamento de Operação Oficial",
+    nivel: "leve",
+    pena: 10,
+    multa: 3000,
+    conversao: "Conversível",
+    descricao:
+      "Interferir ou dificultar operação conduzida por autoridade ministerial.",
+  },
+
+  {
+    artigo: "Art. 117",
+    nome: "Utilização Indevida de Criatura Mágica",
+    nivel: "leve",
+    pena: 10,
+    multa: 3000,
+    conversao: "Conversível",
+    descricao:
+      "Utilizar criatura mágica de forma imprudente ou inadequada sem autorização.",
+  },
+
+  {
+    artigo: "Art. 118",
+    nome: "Abandono de Artefato Perigoso",
+    nivel: "leve",
+    pena: 10,
+    multa: 4000,
+    conversao: "Conversível",
+    descricao:
+      "Deixar artefato mágico perigoso em local público ou inseguro.",
+  },
+
+  {
+    artigo: "Art. 119",
+    nome: "Comércio Irregular de Itens Comuns",
+    nivel: "leve",
+    pena: 10,
+    multa: 4000,
+    conversao: "Conversível",
+    descricao:
+      "Comercializar itens mágicos sem autorização ou registro adequado.",
+  },
+
   {
     artigo: "Art. 201",
-    nome: "Ameaça",
-    nivel: "moderada",
-    pena: 10,
-    multa: 5000,
-    conversao: "Conversão Parcial",
-    descricao:
-      "Intimidar, ameaçar ou constranger terceiros mediante violência, coerção ou ameaça mágica.",
-  },
-  {
-    artigo: "Art. 202",
-    nome: "Agressão Mágica",
-    nivel: "moderada",
-    pena: 15,
-    multa: 5000,
-    conversao: "Conversão Parcial",
-    descricao:
-      "Atacar, ferir ou atingir outra pessoa utilizando magia sem justificativa legal.",
-  },
-  {
-    artigo: "Art. 203",
-    nome: "Ocultação de Identidade",
-    nivel: "moderada",
-    pena: 15,
-    multa: 5000,
-    conversao: "Conversão Parcial",
-    descricao:
-      "Recusar identificação válida perante autoridade ministerial durante abordagem.",
-  },
-  {
-    artigo: "Art. 204",
-    nome: "Falsa Identificação",
-    nivel: "moderada",
-    pena: 15,
-    multa: 5000,
-    conversao: "Conversão Parcial",
-    descricao:
-      "Apresentar identidade, nome ou registro falso perante autoridades ou instituições reconhecidas.",
-  },
-  {
-    artigo: "Art. 205",
     nome: "Furto",
     nivel: "moderada",
     pena: 15,
-    multa: 5000,
-    conversao: "Conversão Parcial",
+    multa: 8000,
+    conversao: "Conversível",
     descricao:
-      "Subtrair bem, recurso ou propriedade pertencente a terceiros sem uso de violência.",
+      "Subtrair patrimônio de terceiro sem uso de violência ou ameaça.",
   },
+
   {
-    artigo: "Art. 206",
-    nome: "Invasão de Propriedade",
+    artigo: "Art. 202",
+    nome: "Ameaça",
     nivel: "moderada",
     pena: 15,
-    multa: 5000,
-    conversao: "Conversão Parcial",
+    multa: 8000,
+    conversao: "Conversível",
     descricao:
-      "Entrar ou permanecer em propriedade privada sem autorização legítima do responsável.",
+      "Intimidar cidadão ou autoridade mediante ameaça física, mágica ou psicológica.",
   },
+
   {
-    artigo: "Art. 207",
-    nome: "Comércio Irregular",
+    artigo: "Art. 203",
+    nome: "Obstrução da Investigação",
     nivel: "moderada",
     pena: 15,
-    multa: 5000,
-    conversao: "Conversão Parcial",
+    multa: 8000,
+    conversao: "Conversível",
     descricao:
-      "Comercializar produtos, artefatos ou serviços sem autorização exigida pelas normas ministeriais.",
+      "Dificultar ou interferir deliberadamente em investigação ministerial.",
   },
+
   {
-    artigo: "Art. 208",
-    nome: "Posse de Poção Proibida",
+    artigo: "Art. 217",
+    nome: "Violação de Correspondência Arcana",
     nivel: "moderada",
     pena: 15,
-    multa: 5000,
-    conversao: "Conversão Parcial",
+    multa: 8000,
+    conversao: "Conversível",
     descricao:
-      "Possuir, armazenar ou transportar poção restrita sem autorização ministerial.",
+      "Interceptar, abrir ou manipular correspondência mágica sem autorização.",
   },
+
   {
-    artigo: "Art. 209",
-    nome: "Posse de Artefato Proibido",
+    artigo: "Art. 204",
+    nome: "Ocultação de Provas",
     nivel: "moderada",
     pena: 20,
-    multa: 8000,
-    conversao: "Conversão Parcial",
+    multa: 10000,
+    conversao: "Conversível",
     descricao:
-      "Possuir artefato mágico classificado como restrito, perigoso ou ilegal.",
+      "Esconder, destruir ou alterar provas vinculadas à investigação oficial.",
   },
+
   {
-    artigo: "Art. 210",
+    artigo: "Art. 205",
     nome: "Resistência à Prisão",
     nivel: "moderada",
     pena: 20,
-    multa: 8000,
-    conversao: "Conversão Parcial",
+    multa: 10000,
+    conversao: "Conversível",
     descricao:
-      "Resistir fisicamente ou magicamente à execução legítima de prisão ministerial.",
+      "Resistir ativamente à prisão, contenção ou custódia ministerial.",
   },
+
+  {
+    artigo: "Art. 206",
+    nome: "Falsidade Ideológica",
+    nivel: "moderada",
+    pena: 20,
+    multa: 10000,
+    conversao: "Conversível",
+    descricao:
+      "Apresentar identidade falsa, alterar registros ou fornecer informações fraudulentas ao Ministério.",
+  },
+
+  {
+    artigo: "Art. 209",
+    nome: "Cumplicidade Criminal",
+    nivel: "moderada",
+    pena: 20,
+    multa: 10000,
+    conversao: "Conversível",
+    descricao:
+      "Auxiliar, favorecer ou facilitar infração penal cometida por terceiro.",
+  },
+
   {
     artigo: "Art. 211",
-    nome: "Fuga de Custódia",
+    nome: "Posse de Item Proibido",
     nivel: "moderada",
     pena: 20,
-    multa: 8000,
-    conversao: "Conversão Parcial",
+    multa: 10000,
+    conversao: "Conversível",
     descricao:
-      "Escapar, tentar escapar ou auxiliar fuga de pessoa submetida à custódia ministerial.",
+      "Possuir item, artefato ou substância proibida sem autorização ministerial.",
   },
+
   {
     artigo: "Art. 212",
-    nome: "Obstrução de Investigação",
+    nome: "Uso Indevido de Recursos Institucionais",
     nivel: "moderada",
     pena: 20,
-    multa: 8000,
-    conversao: "Conversão Parcial",
+    multa: 10000,
+    conversao: "Conversível",
     descricao:
-      "Interferir deliberadamente em investigação mediante destruição de provas ou ocultação.",
+      "Utilizar recursos, equipamentos ou estruturas institucionais sem autorização.",
   },
+
   {
     artigo: "Art. 213",
-    nome: "Omissão Funcional",
+    nome: "Retenção Indevida de Material Institucional",
     nivel: "moderada",
     pena: 20,
-    multa: 8000,
-    conversao: "Conversão Parcial",
+    multa: 10000,
+    conversao: "Conversível",
     descricao:
-      "Deixar de agir diante de situação que exija atuação obrigatória da função.",
+      "Manter sob posse material institucional sem autorização ou devolução adequada.",
   },
+
   {
-    artigo: "Art. 301",
-    nome: "Invasão Institucional",
-    nivel: "grave",
+    artigo: "Art. 214",
+    nome: "Desvio de Ingredientes Restritos",
+    nivel: "moderada",
+    pena: 20,
+    multa: 12000,
+    conversao: "Conversível",
+    descricao:
+      "Desviar, ocultar ou manter ingredientes mágicos restritos sem autorização.",
+  },
+
+  {
+    artigo: "Art. 216",
+    nome: "Violação de Arquivo Restrito",
+    nivel: "moderada",
+    pena: 20,
+    multa: 12000,
+    conversao: "Conversível",
+    descricao:
+      "Acessar ou manipular arquivos protegidos sem autorização.",
+  },
+
+  {
+    artigo: "Art. 218",
+    nome: "Divulgação Indevida de Informação Sigilosa",
+    nivel: "moderada",
+    pena: 20,
+    multa: 12000,
+    conversao: "Conversível",
+    descricao:
+      "Compartilhar informação protegida ou sigilosa sem autorização oficial.",
+  },
+
+  {
+    artigo: "Art. 219",
+    nome: "Manipulação Indevida de Evidência",
+    nivel: "moderada",
+    pena: 20,
+    multa: 12000,
+    conversao: "Conversível",
+    descricao:
+      "Alterar, adulterar ou interferir em evidência oficial de investigação.",
+  },
+
+  {
+    artigo: "Art. 220",
+    nome: "Exercício Ilegal de Autoridade",
+    nivel: "moderada",
+    pena: 20,
+    multa: 10000,
+    conversao: "Conversível",
+    descricao:
+      "Exercer função, autoridade ou representação institucional sem legitimidade.",
+  },
+
+  {
+    artigo: "Art. 221",
+    nome: "Facilitação de Fuga",
+    nivel: "moderada",
+    pena: 20,
+    multa: 12000,
+    conversao: "Conversível",
+    descricao:
+      "Auxiliar ou facilitar fuga de indivíduo sob custódia ministerial.",
+  },
+
+  {
+    artigo: "Art. 222",
+    nome: "Receptação",
+    nivel: "moderada",
+    pena: 20,
+    multa: 12000,
+    conversao: "Conversível",
+    descricao:
+      "Adquirir, ocultar ou manter item proveniente de infração penal.",
+  },
+
+  {
+    artigo: "Art. 223",
+    nome: "Transporte Não Autorizado de Material Restrito",
+    nivel: "moderada",
+    pena: 20,
+    multa: 12000,
+    conversao: "Conversível",
+    descricao:
+      "Transportar material controlado sem autorização institucional.",
+  },
+
+  {
+    artigo: "Art. 227",
+    nome: "Negligência com Criatura Perigosa",
+    nivel: "moderada",
+    pena: 20,
+    multa: 10000,
+    conversao: "Conversível",
+    descricao:
+      "Permitir, por negligência, risco envolvendo criatura mágica perigosa.",
+  },
+
+  {
+    artigo: "Art. 228",
+    nome: "Associação Criminosa",
+    nivel: "moderada",
+    pena: 20,
+    multa: 12000,
+    conversao: "Conversível",
+    descricao:
+      "Associar-se de forma estável com finalidade voltada à prática criminosa.",
+  },
+
+  {
+    artigo: "Art. 229",
+    nome: "Coação",
+    nivel: "moderada",
+    pena: 20,
+    multa: 10000,
+    conversao: "Conversível",
+    descricao:
+      "Constranger indivíduo mediante ameaça, pressão ou intimidação.",
+  },
+
+  {
+    artigo: "Art. 230",
+    nome: "Chantagem",
+    nivel: "moderada",
+    pena: 20,
+    multa: 12000,
+    conversao: "Conversível",
+    descricao:
+      "Exigir vantagem mediante ameaça de exposição ou dano.",
+  },
+
+  {
+    artigo: "Art. 207",
+    nome: "Agressão Mágica",
+    nivel: "moderada",
+    pena: 25,
+    multa: 12000,
+    conversao: "Conversível",
+    descricao:
+      "Atacar outro cidadão mediante magia ofensiva sem intenção letal.",
+  },
+
+  {
+    artigo: "Art. 208",
+    nome: "Contrabando Mágico",
+    nivel: "moderada",
     pena: 25,
     multa: 15000,
-    conversao: "Conversão Restrita",
+    conversao: "Conversível",
     descricao:
-      "Invadir áreas internas, setores sigilosos ou dependências protegidas de instituições reconhecidas.",
+      "Transportar, ocultar ou comercializar itens mágicos ilegais sem autorização.",
   },
+
   {
-    artigo: "Art. 302",
-    nome: "Abuso de Autoridade",
-    nivel: "grave",
+    artigo: "Art. 210",
+    nome: "Extorsão",
+    nivel: "moderada",
     pena: 25,
     multa: 15000,
-    conversao: "Processo Disciplinar",
+    conversao: "Conversível",
     descricao:
-      "Utilizar cargo, função ou posição hierárquica para perseguição, coerção ou favorecimento indevido.",
+      "Obter vantagem mediante ameaça, chantagem ou coerção.",
   },
+
   {
-    artigo: "Art. 303",
-    nome: "Posse de Arma Trouxa",
+    artigo: "Art. 215",
+    nome: "Fabricação Não Autorizada de Poção Restrita",
+    nivel: "moderada",
+    pena: 25,
+    multa: 15000,
+    conversao: "Conversível",
+    descricao:
+      "Produzir poções controladas sem autorização institucional competente.",
+  },
+
+  {
+    artigo: "Art. 224",
+    nome: "Violação Parcial do Véu",
+    nivel: "moderada",
+    pena: 25,
+    multa: 15000,
+    conversao: "Conversível",
+    descricao:
+      "Comprometer parcialmente o sigilo mágico perante trouxas sem autorização.",
+  },
+
+  {
+    artigo: "Art. 225",
+    nome: "Uso Não Autorizado de Magia em Trouxas",
+    nivel: "moderada",
+    pena: 25,
+    multa: 15000,
+    conversao: "Conversível",
+    descricao:
+      "Utilizar magia deliberadamente contra trouxas sem autorização legal.",
+  },
+
+  {
+    artigo: "Art. 226",
+    nome: "Cárcere Privado",
+    nivel: "moderada",
+    pena: 25,
+    multa: 15000,
+    conversao: "Conversível",
+    descricao:
+      "Privar cidadão de liberdade sem autorização legal ou institucional.",
+  },
+
+  {
+    artigo: "Art. 231",
+    nome: "Corrupção Ativa",
+    nivel: "moderada",
+    pena: 25,
+    multa: 15000,
+    conversao: "Conversível",
+    descricao:
+      "Oferecer vantagem indevida a autoridade ou agente institucional.",
+  },
+
+  {
+    artigo: "Art. 232",
+    nome: "Corrupção Passiva",
+    nivel: "moderada",
+    pena: 25,
+    multa: 15000,
+    conversao: "Conversível",
+    descricao:
+      "Solicitar ou receber vantagem indevida em razão de função institucional.",
+  },
+
+  {
+    artigo: "Art. 330",
+    nome: "Fuga da Custódia",
     nivel: "grave",
     pena: 30,
-    multa: 15000,
-    conversao: "Confisco Obrigatório",
+    multa: 18000,
+    conversao: "Conversível",
     descricao:
-      "Possuir arma de fogo, explosivo ou tecnologia trouxa hostil sem autorização excepcional reconhecida pelo Ministério.",
+      "Escapar deliberadamente de prisão, contenção ou transporte oficial.",
   },
+
   {
-    artigo: "Art. 304",
-    nome: "Comércio Ilegal de Criaturas",
+    artigo: "Art. 301",
+    nome: "Roubo",
     nivel: "grave",
     pena: 35,
     multa: 20000,
-    conversao: "Apreensão Possível",
+    conversao: "Conversível",
     descricao:
-      "Comercializar, transportar ou negociar criaturas mágicas sem autorização ou controle ministerial.",
+      "Subtrair patrimônio mediante violência, ameaça ou magia ofensiva.",
   },
+
   {
-    artigo: "Art. 305",
-    nome: "Associação Criminosa",
+    artigo: "Art. 303",
+    nome: "Uso de Arma Trouxa",
     nivel: "grave",
     pena: 35,
     multa: 20000,
-    conversao: "Conversão Restrita",
+    conversao: "Conversível",
     descricao:
-      "Integrar, auxiliar ou participar de organização voltada à prática contínua de infrações penais.",
+      "Utilizar armamento trouxa em ação ofensiva ou criminosa.",
   },
+
   {
-    artigo: "Art. 306",
-    nome: "Ritual Proibido",
+    artigo: "Art. 302",
+    nome: "Sequestro",
     nivel: "grave",
     pena: 40,
-    multa: 20000,
-    conversao: "Sem Conversão",
+    multa: 25000,
+    conversao: "Conversível",
     descricao:
-      "Realizar ritual mágico classificado como proibido, perigoso ou restrito pelas autoridades ministeriais.",
+      "Privar cidadão de liberdade mediante força, ameaça ou contenção mágica.",
   },
+
   {
-    artigo: "Art. 307",
-    nome: "Violação Mental",
+    artigo: "Art. 313",
+    nome: "Invasão Institucional",
+    nivel: "grave",
+    pena: 40,
+    multa: 25000,
+    conversao: "Conversível",
+    descricao:
+      "Invadir, comprometer ou violar instalações ministeriais protegidas.",
+  },
+
+  {
+    artigo: "Art. 319",
+    nome: "Interferência em Julgamento",
+    nivel: "grave",
+    pena: 40,
+    multa: 25000,
+    conversao: "Conversível",
+    descricao:
+      "Interferir deliberadamente em julgamento, audiência ou decisão institucional.",
+  },
+
+  {
+    artigo: "Art. 327",
+    nome: "Captura Ilegal de Criaturas",
+    nivel: "grave",
+    pena: 40,
+    multa: 25000,
+    conversao: "Conversível",
+    descricao:
+      "Capturar criatura mágica protegida sem autorização ministerial.",
+  },
+
+  {
+    artigo: "Art. 304",
+    nome: "Uso de Magia Proibida",
+    nivel: "grave",
+    pena: 45,
+    multa: 30000,
+    conversao: "Conversível",
+    descricao:
+      "Utilizar magia classificada como proibida ou restrita pelo Ministério.",
+  },
+
+  {
+    artigo: "Art. 305",
+    nome: "Violação de Memória",
+    nivel: "grave",
+    pena: 45,
+    multa: 30000,
+    conversao: "Conversível",
+    descricao:
+      "Modificar, apagar ou interferir ilegalmente nas memórias de outro cidadão.",
+  },
+
+  {
+    artigo: "Art. 306",
+    nome: "Manipulação Mental Ilegal",
+    nivel: "grave",
+    pena: 45,
+    multa: 30000,
+    conversao: "Conversível",
+    descricao:
+      "Influenciar, controlar ou interferir ilegalmente na consciência de outro indivíduo.",
+  },
+
+  {
+    artigo: "Art. 312",
+    nome: "Sabotagem Institucional",
     nivel: "grave",
     pena: 45,
     multa: 25000,
-    conversao: "Reclassificação Possível",
+    conversao: "Conversível",
     descricao:
-      "Utilizar Legilimência, invasão mental ou manipulação de memória sem autorização ou consentimento.",
+      "Comprometer deliberadamente estruturas, operações ou sistemas institucionais.",
   },
+
   {
-    artigo: "Art. 308",
-    nome: "Uso de Arma Trouxa",
+    artigo: "Art. 315",
+    nome: "Corrupção Ministerial",
+    nivel: "grave",
+    pena: 45,
+    multa: 30000,
+    conversao: "Conversível",
+    descricao:
+      "Praticar corrupção envolvendo funções, recursos ou interesses institucionais.",
+  },
+
+  {
+    artigo: "Art. 316",
+    nome: "Tráfico de Material Proibido",
+    nivel: "grave",
+    pena: 45,
+    multa: 30000,
+    conversao: "Conversível",
+    descricao:
+      "Comercializar, distribuir ou transportar material mágico proibido.",
+  },
+
+  {
+    artigo: "Art. 318",
+    nome: "Violação Grave do Véu",
+    nivel: "grave",
+    pena: 45,
+    multa: 25000,
+    conversao: "Conversível",
+    descricao:
+      "Comprometer gravemente o sigilo mágico perante o mundo trouxa.",
+  },
+
+  {
+    artigo: "Art. 320",
+    nome: "Violação de Selos Arcanos",
+    nivel: "grave",
+    pena: 45,
+    multa: 30000,
+    conversao: "Conversível",
+    descricao:
+      "Romper, adulterar ou comprometer selos mágicos de proteção institucional.",
+  },
+
+  {
+    artigo: "Art. 321",
+    nome: "Ocultação de Entidade das Trevas",
+    nivel: "grave",
+    pena: 45,
+    multa: 30000,
+    conversao: "Conversível",
+    descricao:
+      "Ocultar, proteger ou facilitar permanência de entidade das trevas.",
+  },
+
+  {
+    artigo: "Art. 324",
+    nome: "Tráfico de Criaturas Mágicas",
+    nivel: "grave",
+    pena: 45,
+    multa: 30000,
+    conversao: "Conversível",
+    descricao:
+      "Capturar, comercializar ou transportar criaturas mágicas ilegalmente.",
+  },
+
+  {
+    artigo: "Art. 331",
+    nome: "Ataque Contra Autoridade Ministerial",
+    nivel: "grave",
+    pena: 45,
+    multa: 30000,
+    conversao: "Conversível",
+    descricao:
+      "Atacar autoridade ministerial durante exercício oficial da função.",
+  },
+
+  {
+    artigo: "Art. 307",
+    nome: "Ritual Proibido",
     nivel: "grave",
     pena: 50,
     multa: 30000,
-    conversao: "Reclassificação Possível",
+    conversao: "Conversível",
     descricao:
-      "Utilizar arma trouxa contra cidadão, autoridade ministerial ou instituição reconhecida.",
+      "Executar ritual mágico proibido, restrito ou não autorizado pelo Ministério.",
   },
+
   {
     artigo: "Art. 309",
+    nome: "Organização Criminosa",
+    nivel: "grave",
+    pena: 50,
+    multa: 30000,
+    conversao: "Conversível",
+    descricao:
+      "Integrar grupo estruturado destinado à prática recorrente de infrações penais.",
+  },
+
+  {
+    artigo: "Art. 310",
+    nome: "Associação com Organização das Trevas",
+    nivel: "grave",
+    pena: 50,
+    multa: 30000,
+    conversao: "Conversível",
+    descricao:
+      "Associar-se deliberadamente a organizações voltadas às artes das trevas.",
+  },
+
+  {
+    artigo: "Art. 311",
     nome: "Traição Institucional",
     nivel: "grave",
     pena: 50,
     multa: 30000,
-    conversao: "Reclassificação Possível",
+    conversao: "Conversível",
     descricao:
-      "Colaborar deliberadamente com ameaças ao Ministério, ao Véu ou às instituições reconhecidas.",
+      "Atuar deliberadamente contra os interesses do Ministério ou da estabilidade mágica.",
   },
+
   {
-    artigo: "Art. 310",
-    nome: "Sequestro",
+    artigo: "Art. 314",
+    nome: "Vazamento de Informação Ultra Secreta",
+    nivel: "grave",
+    pena: 50,
+    multa: 30000,
+    conversao: "Conversível",
+    descricao:
+      "Divulgar informação classificada como ultra secreta sem autorização.",
+  },
+
+  {
+    artigo: "Art. 317",
+    nome: "Experimentos Mágicos Ilegais",
+    nivel: "grave",
+    pena: 50,
+    multa: 30000,
+    conversao: "Conversível",
+    descricao:
+      "Realizar experimentos mágicos ilegais capazes de causar risco coletivo.",
+  },
+
+  {
+    artigo: "Art. 323",
+    nome: "Tortura",
+    nivel: "grave",
+    pena: 50,
+    multa: 30000,
+    conversao: "Conversível",
+    descricao:
+      "Submeter indivíduo a sofrimento físico ou psicológico extremo mediante violência ou magia.",
+  },
+
+  {
+    artigo: "Art. 326",
+    nome: "Uso Massivo de Magia Perigosa",
+    nivel: "grave",
+    pena: 50,
+    multa: 30000,
+    conversao: "Conversível",
+    descricao:
+      "Utilizar magia perigosa em larga escala com risco coletivo significativo.",
+  },
+
+  {
+    artigo: "Art. 328",
+    nome: "Financiamento de Organização Criminosa",
+    nivel: "grave",
+    pena: 50,
+    multa: 30000,
+    conversao: "Conversível",
+    descricao:
+      "Financiar ou sustentar atividades de organização criminosa.",
+  },
+
+  {
+    artigo: "Art. 308",
+    nome: "Terrorismo Mágico",
     nivel: "grave",
     pena: 60,
     multa: 30000,
-    conversao: "Sem Conversão",
+    conversao: "Conversível",
     descricao:
-      "Privar alguém de liberdade mediante força, ameaça, contenção mágica ou coerção.",
+      "Provocar pânico coletivo, ataques organizados ou ameaça massiva mediante magia.",
   },
+
   {
-    artigo: "Art. 311",
+    artigo: "Art. 322",
     nome: "Tentativa de Homicídio",
     nivel: "grave",
     pena: 60,
     multa: 30000,
-    conversao: "Sem Conversão",
+    conversao: "Conversível",
     descricao:
-      "Tentar causar intencionalmente a morte de outro cidadão mediante magia, arma, criatura ou ritual.",
+      "Praticar ato destinado a causar a morte de outro cidadão sem consumação do resultado.",
   },
+
+  {
+    artigo: "Art. 325",
+    nome: "Rebelião Armada",
+    nivel: "grave",
+    pena: 60,
+    multa: 30000,
+    conversao: "Conversível",
+    descricao:
+      "Organizar ou participar de levante armado contra autoridade institucional.",
+  },
+
+  {
+    artigo: "Art. 329",
+    nome: "Corrupção Temporal",
+    nivel: "grave",
+    pena: 60,
+    multa: 30000,
+    conversao: "Conversível",
+    descricao:
+      "Manipular artefatos ou fenômenos temporais sem autorização ministerial.",
+  },
+
   {
     artigo: "Art. 401",
     nome: "Uso de Maldição Imperdoável",
     nivel: "imperdoavel",
-    pena: null,
+    pena: "Perpétua",
     multa: 0,
-    conversao: "Sem Conversão",
+    conversao: "Inconvertível",
     descricao:
-      "Utilizar Avada Kedavra, Cruciatus ou Imperius contra cidadão, autoridade, instituição ou qualquer alvo protegido.",
+      "Utilizar Avada Kedavra, Cruciatus ou Imperius contra qualquer cidadão.",
   },
+
   {
     artigo: "Art. 402",
     nome: "Homicídio",
     nivel: "imperdoavel",
-    pena: null,
+    pena: "Perpétua",
     multa: 0,
-    conversao: "Sem Conversão",
+    conversao: "Inconvertível",
     descricao:
-      "Causar intencionalmente a morte de outro cidadão mediante magia, arma, criatura, ritual ou qualquer meio letal.",
+      "Causar deliberadamente a morte de outro cidadão mediante qualquer meio.",
   },
+
   {
     artigo: "Art. 403",
     nome: "Necromancia",
     nivel: "imperdoavel",
-    pena: null,
+    pena: "Perpétua",
     multa: 0,
-    conversao: "Sem Conversão",
+    conversao: "Inconvertível",
     descricao:
-      "Praticar magia envolvendo manipulação proibida de mortos, cadáveres, almas ou forças necromânticas restritas.",
+      "Praticar magia envolvendo manipulação proibida de mortos, almas ou forças necromânticas.",
   },
+
   {
     artigo: "Art. 404",
     nome: "Criação de Horcrux",
     nivel: "imperdoavel",
-    pena: null,
+    pena: "Perpétua",
     multa: 0,
-    conversao: "Sem Conversão",
+    conversao: "Inconvertível",
     descricao:
-      "Realizar ritual proibido destinado à fragmentação da alma ou preservação artificial da consciência.",
+      "Realizar ritual destinado à fragmentação da alma ou preservação artificial da consciência.",
   },
+
   {
     artigo: "Art. 405",
-    nome: "Violação Temporal Grave",
+    nome: "Violação Temporal",
     nivel: "imperdoavel",
-    pena: null,
+    pena: "Perpétua",
     multa: 0,
-    conversao: "Códice Temporal",
+    conversao: "Inconvertível",
     descricao:
-      "Alterar, romper ou manipular linhas temporais, causalidade, eventos passados ou realidades alternativas com risco severo à estabilidade do mundo mágico.",
+      "Interferir deliberadamente na estabilidade cronológica ou causal da realidade mágica.",
   },
+
   {
     artigo: "Art. 406",
-    nome: "Exposição Severa do Véu",
+    nome: "Ruptura do Véu Arcano",
     nivel: "imperdoavel",
-    pena: null,
+    pena: "Perpétua",
     multa: 0,
-    conversao: "Sem Conversão",
+    conversao: "Inconvertível",
     descricao:
-      "Comprometer deliberadamente o sigilo da comunidade mágica perante o mundo trouxa em larga escala ou com risco severo à estabilidade coletiva.",
+      "Comprometer deliberadamente o sigilo ou a estabilidade entre o mundo mágico e trouxa em nível crítico.",
   },
+
   {
     artigo: "Art. 407",
-    nome: "Uso de Magia Proibida",
+    nome: "Genocídio Mágico",
     nivel: "imperdoavel",
-    pena: null,
+    pena: "Perpétua",
     multa: 0,
-    conversao: "Sem Conversão",
+    conversao: "Inconvertível",
     descricao:
-      "Utilizar magia classificada como proibida, restrita ou de alta periculosidade sem autorização.",
+      "Promover extermínio deliberado contra população, comunidade ou grupo mágico.",
   },
+
+  {
+    artigo: "Art. 408",
+    nome: "Ritual de Sacrifício Humano",
+    nivel: "imperdoavel",
+    pena: "Perpétua",
+    multa: 0,
+    conversao: "Inconvertível",
+    descricao:
+      "Realizar ritual mágico envolvendo sacrifício humano ou morte ritualística.",
+  },
+
+  {
+    artigo: "Art. 409",
+    nome: "Invocação de Entidade Catastrófica",
+    nivel: "imperdoavel",
+    pena: "Perpétua",
+    multa: 0,
+    conversao: "Inconvertível",
+    descricao:
+      "Invocar entidade capaz de ameaçar gravemente a estabilidade mágica coletiva.",
+  },
+
+  {
+    artigo: "Art. 410",
+    nome: "Colapso Temporal Deliberado",
+    nivel: "imperdoavel",
+    pena: "Perpétua",
+    multa: 0,
+    conversao: "Inconvertível",
+    descricao:
+      "Provocar deliberadamente ruptura severa da ordem temporal ou da causalidade mágica.",
+  },
+
+  {
+    artigo: "Art. 411",
+    nome: "Destruição de Patrimônio Arcano Histórico",
+    nivel: "imperdoavel",
+    pena: "Perpétua",
+    multa: 0,
+    conversao: "Inconvertível",
+    descricao:
+      "Destruir deliberadamente patrimônio mágico histórico de valor insubstituível.",
+  },
+
+  {
+    artigo: "Art. 412",
+    nome: "Libertação de Entidade de Classe Extrema",
+    nivel: "imperdoavel",
+    pena: "Perpétua",
+    multa: 0,
+    conversao: "Inconvertível",
+    descricao:
+      "Libertar entidade mágica classificada como ameaça extrema à estabilidade coletiva.",
+  },
+
+  {
+    artigo: "Art. 413",
+    nome: "Corrupção Absoluta do Véu",
+    nivel: "imperdoavel",
+    pena: "Perpétua",
+    multa: 0,
+    conversao: "Inconvertível",
+    descricao:
+      "Comprometer de forma irreversível a separação entre o mundo mágico e o mundo trouxa.",
+  },
+
+  {
+    artigo: "Art. 414",
+    nome: "Ritual de Extinção Arcana",
+    nivel: "imperdoavel",
+    pena: "Perpétua",
+    multa: 0,
+    conversao: "Inconvertível",
+    descricao:
+      "Executar ritual destinado à destruição massiva de energia ou existência mágica.",
+  }
 ];
+
+(() => {
+  const levelOrder = {
+    leve: 1,
+    moderada: 2,
+    grave: 3,
+    imperdoavel: 4,
+  };
+
+  function getPenaltyOrder(crime) {
+    return typeof crime.pena === "number" ? crime.pena : Number.POSITIVE_INFINITY;
+  }
+
+  function getArticleOrder(crime) {
+    const articleNumber = crime.artigo.match(/\d+/);
+    return articleNumber ? Number(articleNumber[0]) : Number.POSITIVE_INFINITY;
+  }
+
+  window.PENAL_CRIMES.sort((firstCrime, secondCrime) => {
+    const firstLevel = levelOrder[firstCrime.nivel] || Number.POSITIVE_INFINITY;
+    const secondLevel = levelOrder[secondCrime.nivel] || Number.POSITIVE_INFINITY;
+
+    if (firstLevel !== secondLevel) {
+      return firstLevel - secondLevel;
+    }
+
+    const firstPenalty = getPenaltyOrder(firstCrime);
+    const secondPenalty = getPenaltyOrder(secondCrime);
+
+    if (firstPenalty !== secondPenalty) {
+      return firstPenalty - secondPenalty;
+    }
+
+    return getArticleOrder(firstCrime) - getArticleOrder(secondCrime);
+  });
+})();

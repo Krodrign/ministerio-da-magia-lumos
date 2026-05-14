@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
+  window.LegalRenderer?.renderArticleAccordions({
+    containerSelector: ".const-list",
+    sections: window.CONSTITUTION_ARTICLES || [],
+    articleClass: "article-card",
+  });
+
   createSearch({
     inputSelector: "#constSearch",
     resultsSelector: "#constResults",

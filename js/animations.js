@@ -1,6 +1,3 @@
-// Animations functionality
-
-// Fade-up on scroll
 const revealItems = document.querySelectorAll('.fade-up');
 
 const revealOnScroll = () => {
@@ -16,10 +13,7 @@ const revealOnScroll = () => {
 };
 
 window.addEventListener('scroll', revealOnScroll);
-revealOnScroll();
-
-// Particles effect
-function createParticles() {
+revealOnScroll();function createParticles() {
   const particlesContainer = document.createElement('div');
   particlesContainer.className = 'particles';
 

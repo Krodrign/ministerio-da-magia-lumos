@@ -1,6 +1,6 @@
-/* CÓDIGO PENAL */
 
-/* HERO */
+
+
 
 .cp-hero {
   position: relative;
@@ -54,7 +54,7 @@
   line-height: 1.8;
 }
 
-/* SEÇÕES */
+
 
 .cp-intro,
 .cp-calculator-access,
@@ -74,7 +74,7 @@
   background: rgba(214, 179, 106, 0.08);
 }
 
-/* DISPOSIÇÕES GERAIS */
+
 
 .penal-list {
   display: grid;
@@ -96,9 +96,7 @@
   margin-right: 6px;
 }
 
-/* =========================================================
-   CHAMADA DA CALCULADORA
-   ========================================================= */
+
 
 .calculator-box {
   display: flex;
@@ -140,9 +138,7 @@
   margin-bottom: 18px;
 }
 
-/* =========================================================
-   INFRAÇÕES PENAIS
-   ========================================================= */
+
 
 .crime-accordion-list {
   display: grid;
@@ -206,7 +202,7 @@
 
   overflow: hidden;
 
-  padding: 0 24px;
+  padding: 0 18px;
 
   opacity: 0;
 
@@ -220,7 +216,7 @@
 }
 
 .crime-accordion-content.open {
-  padding: 24px;
+  padding: 18px;
 
   opacity: 1;
 
@@ -235,9 +231,7 @@
   gap: 18px;
 }
 
-/* =========================================================
-   CARDS DOS CRIMES
-   ========================================================= */
+
 
 .crime-card {
   display: flex;
@@ -247,7 +241,7 @@
 
   min-height: 260px;
 
-  padding: 24px;
+  padding: 22px;
 
   border-radius: 20px;
 
@@ -357,11 +351,9 @@
   font-size: 12px;
 }
 
-/* =========================================================
-   CORES POR NÍVEL
-   ========================================================= */
 
-/* LEVE */
+
+
 
 .crime-accordion.light,
 .crime-card.light {
@@ -380,7 +372,7 @@
   box-shadow: 0 16px 38px rgba(74, 222, 128, 0.08);
 }
 
-/* MODERADA */
+
 
 .crime-accordion.moderate,
 .crime-card.moderate {
@@ -399,7 +391,7 @@
   box-shadow: 0 16px 38px rgba(250, 204, 21, 0.08);
 }
 
-/* GRAVE */
+
 
 .crime-accordion.grave,
 .crime-card.grave {
@@ -418,7 +410,7 @@
   box-shadow: 0 16px 38px rgba(248, 113, 113, 0.08);
 }
 
-/* IMPERDOÁVEL */
+
 
 .crime-accordion.unforgivable,
 .crime-card.unforgivable {
@@ -441,9 +433,7 @@
   box-shadow: 0 16px 38px rgba(0, 0, 0, 0.35);
 }
 
-/* =========================================================
-   DISPOSIÇÕES FINAIS
-   ========================================================= */
+
 
 .cp-final .info-box {
   padding: 30px;
@@ -455,9 +445,7 @@
   background: rgba(255, 255, 255, 0.025);
 }
 
-/* =========================================================
-   RESPONSIVO
-   ========================================================= */
+
 
 @media (max-width: 980px) {
   .crime-grid {
@@ -480,6 +468,10 @@
     padding-top: 90px;
   }
 
+  .cp-hero-content h2 {
+    font-size: 46px;
+  }
+
   .cp-intro,
   .cp-calculator-access,
   .cp-crimes,
@@ -497,16 +489,33 @@
   }
 
   .crime-accordion-content.open {
-    padding: 18px;
+    padding: 14px;
   }
 
   .crime-card {
     min-height: auto;
 
-    padding: 22px;
+    padding: 20px;
   }
 
   .crime-header {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .cp-hero-content h2 {
+    font-size: 40px;
+  }
+
+  .crime-accordion-header h3 {
+    font-size: 24px;
+  }
+
+  .crime-card,
+  .penal-article,
+  .calculator-box,
+  .cp-final .info-box {
+    padding: 16px;
   }
 }

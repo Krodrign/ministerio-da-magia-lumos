@@ -1,10 +1,10 @@
-/* BASE */
+
 
 body {
   background: #050505;
 }
 
-/* HERO */
+
 
 .hero {
   position: relative;
@@ -83,13 +83,13 @@ body {
   flex-wrap: wrap;
 }
 
-/* INTRO */
+
 
 .home-intro {
   padding: 100px 0;
 }
 
-/* CARDS */
+
 
 .home-navigation {
   padding-bottom: 100px;
@@ -147,7 +147,7 @@ body {
   line-height: 1.8;
 }
 
-/* CÓDIGO PENAL */
+
 
 .penal-preview {
   padding: 70px 0 110px;
@@ -248,13 +248,64 @@ body {
   }
 }
 
-/* DESTAQUE */
+@media (max-width: 768px) {
+  .hero,
+  .hero-overlay {
+    background-attachment: scroll;
+  }
+
+  .hero {
+    min-height: 82vh;
+  }
+
+  .hero h2 {
+    font-size: 48px;
+  }
+
+  .home-intro,
+  .home-navigation,
+  .penal-preview,
+  .home-highlight {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .nav-card,
+  .penal-card-content {
+    padding: 22px;
+  }
+
+  .penal-card img {
+    height: 210px;
+  }
+
+  .penal-card-content h3 {
+    font-size: 28px;
+  }
+
+  .penal-card-content .button-primary {
+    width: calc(100% + 44px);
+    margin: auto -22px -22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 40px;
+  }
+
+  .hero-buttons {
+    width: 100%;
+  }
+}
+
+
 
 .home-highlight {
   padding-bottom: 120px;
 }
 
-/* DESKTOP */
+
 
 @media (min-width: 900px) {
   .navigation-grid {

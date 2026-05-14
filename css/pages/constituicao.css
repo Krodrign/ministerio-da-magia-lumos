@@ -1,4 +1,4 @@
-/* HERO */
+
 
 .const-hero {
   position: relative;
@@ -23,7 +23,7 @@
 }
 
 
-/* TÍTULOS */
+
 
 .const-hero-content h2 {
   font-family: "Cinzel", serif;
@@ -41,7 +41,7 @@
   margin-bottom: 18px;
 }
 
-/* TEXTOS */
+
 
 .const-hero-content p,
 .const-heading p,
@@ -52,7 +52,7 @@
   line-height: 1.8;
 }
 
-/* SEÇÕES */
+
 
 .const-intro,
 .const-search-section,
@@ -61,7 +61,7 @@
   padding: 30px 0;
 }
 
-/* CAIXAS DA PÁGINA */
+
 
 .preamble-box,
 .legal-search-box,
@@ -73,11 +73,29 @@
   background: rgba(255, 255, 255, 0.025);
 }
 
-/* LISTA DE TÍTULOS */
+.preamble-box p {
+  text-align: justify;
+}
+
+.preamble-box p + p {
+  margin-top: 14px;
+}
+
+
 
 .const-list {
   display: grid;
   gap: 18px;
+}
+
+.article-card p + p {
+  margin-top: 14px;
+}
+
+.article-card p strong {
+  color: var(--gold);
+  font-family: "Cinzel", serif;
+  margin-right: 6px;
 }
 
 .article-highlight {
@@ -85,14 +103,14 @@
   box-shadow: 0 0 28px rgba(214, 179, 106, 0.16);
 }
 
-/* PROMULGAÇÃO */
+
 
 .promulgation-date {
   margin-top: 24px;
   color: var(--gray);
 }
 
-/* MOBILE */
+
 
 @media (max-width: 768px) {
   .const-hero {
@@ -101,6 +119,10 @@
 
   .const-hero-content {
     padding-top: 90px;
+  }
+
+  .const-hero-content h2 {
+    font-size: 46px;
   }
 
   .const-intro,
@@ -114,5 +136,18 @@
   .legal-search-box,
   .promulgation-box {
     padding: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .const-hero-content h2 {
+    font-size: 40px;
+  }
+
+  .article-card,
+  .preamble-box,
+  .legal-search-box,
+  .promulgation-box {
+    padding: 16px;
   }
 }

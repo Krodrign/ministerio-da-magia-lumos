@@ -1,4 +1,4 @@
-/* HAMBURGER BUTTON */
+
 
 .hamburger {
   display: none;
@@ -40,9 +40,9 @@
   transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* MOBILE MENU */
 
-@media (max-width: 899px) {
+
+@media (max-width: 1080px) {
   .hamburger {
     display: flex;
   }
@@ -108,7 +108,13 @@
   }
 }
 
-@media (min-width: 900px) {
+@media (max-width: 480px) {
+  .menu {
+    top: 76px;
+  }
+}
+
+@media (min-width: 1081px) {
   .menu {
     display: flex;
   }
