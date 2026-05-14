@@ -56,7 +56,7 @@
 /* MENU */
 
 .menu {
-  display: none;
+  display: flex;
   align-items: center;
   gap: 28px;
 }

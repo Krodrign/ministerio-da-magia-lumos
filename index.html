@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./css/components.css" />
     <link rel="stylesheet" href="./css/animations.css" />
     <link rel="stylesheet" href="./css/pages/home.css" />
+    <link rel="stylesheet" href="./css/hamburger.css" />
   </head>
 
   <body>
@@ -41,7 +42,13 @@
           </div>
         </a>
 
-        <nav class="menu">
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="menu" id="menu">
           <a href="./index.html" class="active">INÍCIO</a>
 
           <a href="./constituicao.html"> CONSTITUIÇÃO </a>
@@ -58,7 +65,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            DISCORD DA CIDADE
+            DISCORD
           </a>
         </nav>
       </div>
@@ -200,6 +207,7 @@
       <div class="brand-sign">KRODRIGN © 2026</div>
     </footer>
 
+    <script src="./js/hamburger.js"></script>
     <script src="./js/accordion.js"></script>
     <script src="./js/search.js"></script>
     <script src="./js/animations.js"></script>
