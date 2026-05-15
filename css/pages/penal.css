@@ -70,6 +70,14 @@
   box-shadow: 0 0 0 2px rgba(214, 179, 106, 0.18);
 }
 
+.crime-card.highlighted {
+  border-color: rgba(214, 179, 106, 0.72);
+  background: rgba(214, 179, 106, 0.08);
+  box-shadow:
+    0 0 0 2px rgba(214, 179, 106, 0.24),
+    0 18px 46px rgba(214, 179, 106, 0.14);
+}
+
 .crime-accordion.highlighted .crime-accordion-header {
   background: rgba(214, 179, 106, 0.08);
 }
@@ -249,15 +257,13 @@
 
   background: rgba(0, 0, 0, 0.26);
 
-  transition: 0.3s ease;
+  transition: none;
 }
 
 .crime-card:hover {
-  transform: translateY(-4px);
-
-  border-color: rgba(214, 179, 106, 0.22);
-
-  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.28);
+  transform: none;
+  box-shadow: none;
+  background: rgba(0, 0, 0, 0.26);
 }
 
 .crime-header {
@@ -367,12 +373,8 @@
 }
 
 .crime-card.light:hover {
-  border-color: rgba(74, 222, 128, 0.38);
-
-  box-shadow: 0 16px 38px rgba(74, 222, 128, 0.08);
+  border-color: rgba(74, 222, 128, 0.18);
 }
-
-
 
 .crime-accordion.moderate,
 .crime-card.moderate {
@@ -386,12 +388,8 @@
 }
 
 .crime-card.moderate:hover {
-  border-color: rgba(250, 204, 21, 0.38);
-
-  box-shadow: 0 16px 38px rgba(250, 204, 21, 0.08);
+  border-color: rgba(250, 204, 21, 0.18);
 }
-
-
 
 .crime-accordion.grave,
 .crime-card.grave {
@@ -405,12 +403,8 @@
 }
 
 .crime-card.grave:hover {
-  border-color: rgba(248, 113, 113, 0.42);
-
-  box-shadow: 0 16px 38px rgba(248, 113, 113, 0.08);
+  border-color: rgba(248, 113, 113, 0.2);
 }
-
-
 
 .crime-accordion.unforgivable,
 .crime-card.unforgivable {
@@ -428,12 +422,16 @@
 }
 
 .crime-card.unforgivable:hover {
-  border-color: rgba(70, 70, 70, 0.95);
-
-  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.35);
+  border-color: rgba(28, 28, 28, 0.95);
 }
 
-
+.crime-card.highlighted:hover {
+  border-color: rgba(214, 179, 106, 0.72);
+  background: rgba(214, 179, 106, 0.08);
+  box-shadow:
+    0 0 0 2px rgba(214, 179, 106, 0.24),
+    0 18px 46px rgba(214, 179, 106, 0.14);
+}
 
 .cp-final .info-box {
   padding: 30px;
